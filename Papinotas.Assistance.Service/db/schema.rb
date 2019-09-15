@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_15_051215) do
+ActiveRecord::Schema.define(version: 2019_09_15_174016) do
 
   create_table "assistances", force: :cascade do |t|
     t.integer "assistance_id"
     t.integer "list_id"
     t.datetime "created_date"
     t.datetime "modified_date"
-    t.integer "lists_id"
+    t.integer "lists_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["lists_id"], name: "index_assistances_on_lists_id"
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2019_09_15_051215) do
     t.integer "course_id"
     t.integer "student_id"
     t.integer "number_of_list"
-    t.integer "courses_id"
-    t.integer "students_id"
+    t.integer "courses_id", null: false
+    t.integer "students_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["courses_id"], name: "index_lists_on_courses_id"

@@ -1,9 +1,7 @@
 class Course < ApplicationRecord
 
-    has_many :list
-
-    self.primary_key = "course_id"
+    has_many :lists
     
     validates :course_letter, presence: true
-    
+
 end

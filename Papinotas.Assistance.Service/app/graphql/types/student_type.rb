@@ -1,6 +1,6 @@
 module Types
 
-    class StudentType<Types::BaseObject
+    class Types::StudentType<Types::BaseObject
 
         field :id, ID, null: false
 

@@ -1,8 +1,6 @@
 class Student < ApplicationRecord
 
-    has_many :list
-
-    self.primary_key = "student_id"
+    has_many :lists
   
     validates :name, presence: true
     validates :student_id, presence: true

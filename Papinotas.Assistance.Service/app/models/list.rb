@@ -1,11 +1,8 @@
 class List < ApplicationRecord
+  belongs_to :courses
+  belongs_to :students
 
-  belongs_to :course
-  belongs_to :student
-
-  has_many :assistance
-
-  self.primary_key = "list_id"
+  has_many :assistances
 
   validates :last_name, presence: true
   validates :number_of_list, presence: true

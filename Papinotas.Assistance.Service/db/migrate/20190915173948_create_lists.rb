@@ -5,8 +5,8 @@ class CreateLists < ActiveRecord::Migration[6.0]
       t.integer :course_id
       t.integer :student_id
       t.integer :number_of_list
-      t.references :courses, foreign_key: true
-      t.references :students, foreign_key: true
+      t.references :courses, null: false, foreign_key: true
+      t.references :students, null: false, foreign_key: true
 
       t.timestamps
     end

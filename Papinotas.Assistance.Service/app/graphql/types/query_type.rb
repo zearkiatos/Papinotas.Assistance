@@ -5,16 +5,16 @@ module Types
       description 'Find all students'
     end
 
-    field :student, [Types::StudentType], null: false do
-      argument :id, ID, required: true
+    field :student, StudentType, null: true do
+      argument :student_id, Integer, required: true
     end
 
     def students
       Student.all
     end
 
-    def student(id)
-      Student.find(id)
+    def student(student_id:)
+      Student.find(student_id)
     end
 
   end
