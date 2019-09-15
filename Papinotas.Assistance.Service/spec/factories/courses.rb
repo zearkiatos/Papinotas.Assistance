@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :course do
-    courseId { "" }
-    courseLetter { "MyString" }
+    course_id { "" }
+    course_letter { "MyString" }
   end
 end

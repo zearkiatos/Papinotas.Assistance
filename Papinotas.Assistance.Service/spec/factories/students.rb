@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :student do
-    studentId { "" }
+    student_id { "" }
     name { "MyString" }
-    lastName { "MyString" }
+    last_name { "MyString" }
     rut { "MyString" }
   end
 end

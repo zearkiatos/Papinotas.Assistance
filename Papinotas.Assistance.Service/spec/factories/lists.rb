@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :list do
-    listId { "" }
-    courseId { "" }
-    studentId { "" }
-    numberOfList { "" }
+    list_id { "" }
+    course_id { "" }
+    student_id { "" }
+    number_of_list { "" }
     course { nil }
     student { nil }
   end

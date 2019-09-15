@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :assistance do
-    assistanceId { "" }
-    listId { "" }
-    createdDate { "2019-09-14 17:14:52" }
-    modifiedDate { "2019-09-14 17:14:52" }
+    assistance_id { "" }
+    list_id { "" }
+    created_date { "2019-09-15 02:12:15" }
+    modified_date { "2019-09-15 02:12:15" }
     list { nil }
   end
 end
