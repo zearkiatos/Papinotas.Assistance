@@ -1,13 +1,31 @@
 import React from 'react';
 import './styles/Course.css';
-import logoPapinotas from '../assests/images/logoMini.png'
+import {graphql} from 'react-apollo';
+import gql from 'graphql-tag';
+import logoPapinotas from '../assests/images/logoMini.png';
+const courseList = ({data:{
+    loading, error, courses
+}})=>{
+    if(loading)
+        return <p>Loading...</p>;
+    console.log(courses);
+    return <div className="container">{
+        courses.map(c=><div className="course">{c.courseLetter}</div>)
+    }</div>;
+};
 
-
+const CoursesWithData = graphql(gql`{
+    courses{
+        id
+        courseId
+        courseLetter
+    }
+}`)(courseList);
 class Course extends React.Component{
     render(){
         return (
             <div>
-                <header class="header">
+                <header className="header">
                     <div>
                         <img src={logoPapinotas} alt="Papinotas"/>
                     </div>
@@ -22,18 +40,8 @@ class Course extends React.Component{
                 <div>
                     <h1>Courses: </h1>
                 </div>
-                <section class="courseList">
-                    <div class="container">
-                        <div class="course">
-                            Course 1
-                        </div>
-                        <div class="course">
-                            Course 1
-                        </div >
-                        <div class="course">
-                            Course 1
-                        </div>
-                    </div>
+                <section className="courseList">
+                    <CoursesWithData />
                 </section>
             </div>
         );

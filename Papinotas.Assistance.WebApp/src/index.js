@@ -4,26 +4,17 @@ import Course from './components/Course';
 import List from './pages/List';
 import CreateStudent from './pages/CreateStudent';
 import { Constant } from './commons/constant';
-import ApolloClient from 'apollo-client';
-import { HttpLink } from 'apollo-link-http';
-import { InMemoryCache } from 'apollo-client-preset';
-
+import ApolloClient from 'apollo-boost';
+import {ApolloProvider} from 'react-apollo';
 const container = document.getElementById('app');
 
-const httpLink = {
-    uri: Constant.envDevelopment+Constant.endpoint,
-}
-
 const client = new ApolloClient({
-    link: new HttpLink(httpLink),
-    cache: new InMemoryCache()
+    uri: Constant.envDevelopment+Constant.endpoint,
 });
 
-const Root = ()=>(
-    <ApolloProvider client={client}>
-        <App />
-    </ApolloProvider>
-);
-
 // ReactDOM.render(<Course />,container);
-ReactDOM.render(<CreateStudent />,container);
+ReactDOM.render(
+<ApolloProvider client={client}>
+    <Course  />
+</ApolloProvider>
+    ,container);
