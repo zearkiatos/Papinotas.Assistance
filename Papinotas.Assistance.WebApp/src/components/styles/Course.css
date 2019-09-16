@@ -35,6 +35,22 @@
   padding: 1em;
 }
 
+button {
+  background-color: #aaaaaa;
+  padding: 1em 2em;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  margin-top: 1em;
+  font-size: 12pt;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
 .header {
   padding: 0 2em;
   background-color: #3a7bc8;
