@@ -1,0 +1,51 @@
+@import 'variables';
+
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.containerGrow{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.one{
+    flex-grow: 9;
+}
+.two{
+    flex-grow: 1;
+}
+.three{
+    flex-grow: 1;
+}
+
+.four{
+    flex-grow: 1;
+}
+
+.check{
+    padding:1em;
+}
+
+button{
+    background-color:$defaultButton;
+    padding:1em 2em;
+    color:$titleColor;
+    font-weight:bold;
+    border:none;
+    margin-top:1em;
+    font-size:12pt;
+    margin-right:1em;
+    border-radius: 10px;
+}
+button:active{
+    opacity:0.8;
+}

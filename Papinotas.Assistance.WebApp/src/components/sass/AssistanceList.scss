@@ -1,0 +1,31 @@
+@import 'app';
+
+section{
+    margin-top:2em;
+}
+ul{
+    width:95%;
+    padding:0;
+    margin:0;
+}
+ul li {
+    list-style:none;
+    padding:1em 0;
+    padding-left:0.5em;
+}
+ul li:nth-child(2n){
+    background-color:$listPart;
+}
+
+ul li:nth-child(2n-1){
+    background-color:$listImpart;
+}
+
+.edit{
+    color:$secondaryColor;
+}
+
+.delete{
+    color:$deleteButton;
+}
+

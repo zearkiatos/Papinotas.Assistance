@@ -17,6 +17,22 @@ module Types
       Student.find(student_id)
     end
 
+    field :courses, [Types::CourseType], null: false do
+      description 'Find all courses'
+    end
+
+    field :course, CourseType, null: true do
+      argument :course_id, Integer, required: true
+    end
+
+    def course(course_id:)
+      Course.find(course_id)
+    end
+
+    def courses
+      Course.all
+    end
+
   end
 
 end
