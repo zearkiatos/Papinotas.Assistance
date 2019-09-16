@@ -1,0 +1,48 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containerGrow {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.one {
+  flex-grow: 9;
+}
+
+.two {
+  flex-grow: 1;
+}
+
+.three {
+  flex-grow: 1;
+}
+
+.four {
+  flex-grow: 1;
+}
+
+.check {
+  padding: 1em;
+}
+
+.searchInput {
+  width: 95%;
+  padding: 1em 0;
+  padding-left: 0.5em;
+  border-radius: 5px;
+  border: solid 2px;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=SearchList.css.map */

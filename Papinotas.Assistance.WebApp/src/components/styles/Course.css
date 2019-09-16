@@ -1,0 +1,88 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containerGrow {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.one {
+  flex-grow: 9;
+}
+
+.two {
+  flex-grow: 1;
+}
+
+.three {
+  flex-grow: 1;
+}
+
+.four {
+  flex-grow: 1;
+}
+
+.check {
+  padding: 1em;
+}
+
+.header {
+  padding: 0 2em;
+  background-color: #3a7bc8;
+}
+.header div {
+  display: inline-block;
+}
+.header h1 {
+  font-size: 64pt;
+  color: #ffffff;
+}
+.header img {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 32pt;
+    color: #ffffff;
+  }
+}
+@media (min-width: 500) and (max-width: 600) {
+  .header h1 {
+    font-size: 24pt;
+    color: #ffffff;
+  }
+}
+@media (min-width: 300) and (max-width: 500) {
+  .header img {
+    width: 32px;
+    height: 32px;
+  }
+  .header h1 {
+    font-size: 16pt;
+    color: #ffffff;
+  }
+}
+
+.courseList {
+  padding: 0 2em;
+}
+.courseList div.course {
+  background-color: #FF9600;
+  color: #ffffff;
+  padding: 5em;
+  margin-left: 1em;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=Course.css.map */

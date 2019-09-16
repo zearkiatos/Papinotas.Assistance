@@ -1,0 +1,70 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.containerGrow {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.one {
+  flex-grow: 9;
+}
+
+.two {
+  flex-grow: 1;
+}
+
+.three {
+  flex-grow: 1;
+}
+
+.four {
+  flex-grow: 1;
+}
+
+.check {
+  padding: 1em;
+}
+
+section {
+  margin-top: 2em;
+}
+
+ul {
+  width: 95%;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 1em 0;
+  padding-left: 0.5em;
+}
+
+ul li:nth-child(2n) {
+  background-color: #eeeeee;
+}
+
+ul li:nth-child(2n-1) {
+  background-color: #30caff;
+}
+
+.edit {
+  color: #FF9600;
+}
+
+.delete {
+  color: red;
+}
+
+/*# sourceMappingURL=assistancelist.css.map */
