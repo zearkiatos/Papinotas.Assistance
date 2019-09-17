@@ -4,7 +4,8 @@ class List < ApplicationRecord
 
   has_many :assistances
 
-  validates :last_name, presence: true
+  validates :course_id, presence: true
+  validates :student_id, presence: true
   validates :number_of_list, presence: true
 
 end

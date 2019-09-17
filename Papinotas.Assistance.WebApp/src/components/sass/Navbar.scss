@@ -1,0 +1,41 @@
+@import 'app';
+
+.header
+{
+    padding:0 2em;
+    background-color:$headerBg;
+    div{
+        display:inline-block;
+    }
+    h1{
+        font-size:64pt;
+        color:$titleColor;
+    }
+    img{
+        width:64px;
+        height:64px;
+    }
+    @media (max-width:1024px){
+        h1{
+            font-size:32pt;
+            color:$titleColor;
+        }
+    }
+
+    @media (min-width:500) and (max-width:600){
+        h1{
+            font-size:24pt;
+            color:$titleColor;
+        }
+    }
+    @media (min-width:300) and (max-width:500){
+        img{
+            width:32px;
+            height:32px;
+        }
+        h1{
+            font-size:16pt;
+            color:$titleColor;
+        }
+    }
+}

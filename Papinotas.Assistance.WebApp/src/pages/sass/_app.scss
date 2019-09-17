@@ -9,3 +9,26 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+button{
+    background-color:$defaultButton;
+    padding:1em 2em;
+    color:$titleColor;
+    font-weight:bold;
+    border:none;
+    margin-top:1em;
+    font-size:12pt;
+    margin-right:1em;
+    border-radius: 10px;
+}
+button:active{
+    opacity:0.8;
+}
+
+
+.buttonSave{
+    background-color:$saveButton;
+    i{
+        color:$titleColor;
+    }
+}

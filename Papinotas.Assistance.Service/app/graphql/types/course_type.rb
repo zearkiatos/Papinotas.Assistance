@@ -7,7 +7,8 @@ module Types
         field :course_id, Integer, null: false
 
         field :course_letter, String, null: false
-        
+
+
     end
 
 end

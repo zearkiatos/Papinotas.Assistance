@@ -51,16 +51,42 @@ button:active {
   opacity: 0.8;
 }
 
-.courseList {
+.header {
   padding: 0 2em;
+  background-color: #3a7bc8;
 }
-.courseList div.course {
-  background-color: #FF9600;
+.header div {
+  display: inline-block;
+}
+.header h1 {
+  font-size: 64pt;
   color: #ffffff;
-  padding: 5em;
-  margin-left: 1em;
-  margin-top: 2em;
-  font-weight: bold;
+}
+.header img {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 32pt;
+    color: #ffffff;
+  }
+}
+@media (min-width: 500) and (max-width: 600) {
+  .header h1 {
+    font-size: 24pt;
+    color: #ffffff;
+  }
+}
+@media (min-width: 300) and (max-width: 500) {
+  .header img {
+    width: 32px;
+    height: 32px;
+  }
+  .header h1 {
+    font-size: 16pt;
+    color: #ffffff;
+  }
 }
 
-/*# sourceMappingURL=Course.css.map */
+/*# sourceMappingURL=Navbar.css.map */

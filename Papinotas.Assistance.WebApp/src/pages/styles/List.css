@@ -8,4 +8,31 @@
   flex-wrap: wrap;
 }
 
+button {
+  background-color: #aaaaaa;
+  padding: 1em 2em;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  margin-top: 1em;
+  font-size: 12pt;
+  margin-right: 1em;
+  border-radius: 10px;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.buttonSave {
+  background-color: #28a745;
+}
+.buttonSave i {
+  color: #ffffff;
+}
+
+.buttonSave {
+  background-color: #28a745;
+}
+
 /*# sourceMappingURL=List.css.map */

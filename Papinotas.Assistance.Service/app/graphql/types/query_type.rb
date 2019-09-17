@@ -9,6 +9,7 @@ module Types
       argument :student_id, Integer, required: true
     end
 
+
     def students
       Student.all
     end
@@ -31,6 +32,14 @@ module Types
 
     def courses
       Course.all
+    end
+
+    field :courseList, CourseType, null: true do
+      argument :course_id, Integer, required: true
+    end
+
+    def courseList(course_id:)
+      Course.where(course_id: course_id)
     end
 
   end
